@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title> Ricardo's Best Restaurants </title>
+        <meta charset="utf-8"> <!-- needed for character encoding of the website -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- needed for responsive website - tells the device it should not zoom out initial and always start with a scale of 1 -->
+        <link rel="stylesheet" type="text/css" href="grid.css"> <!-- links to the responsive grid system stylesheet-->
+        <!-- <link rel="stylesheet" type="text/css" href="/eats-styles.css">
+         links to the responsive grid system stylesheet-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <!-- link to Lato font on google fonts site -->
+    </head>
+
+    <body>
+
+        <!-- **************************** NAVIGATION SECTION ************************* -->
+        <nav>
+            <!-- establishes the navigation menu section of the header -->
+            <div class="row">
+                <img src="/img/ProfilePic 4.png" alt="My Profile Picture as a logo" class="logo"
+                    style="height:200px; border-radius: 50%; margin-right: 10px; vertical-align: middle">
+                <!-- adds the logo -->
+                <ul class="main-nav">
+                    <!-- creates an unordered list for the navigation menu with list items to follow -->
+                    <li> <a href="#restaurants"> My Favorite Restaurants </a> </li>
+                    <li> <a href="#kitchen"> My Kitchen </a> </li>
+                    <li> <a href="#contact"> Contact Form </a> </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- **************************  RESTAURANTS SECTION ************************************ -->
+
+        <section class="section-restaurant" id="restaurants">
+
+            <div class="row">
+                <h2> Ricardo's Favorite Restaurants </h2>
+            </div>
+
+            <div class="row js--wp-2">
+                <!-- new row contents to follow are contained in this row -->
+
+                <div class="col span-1-of-5 box">
+                    <!-- splits the row into 1 of 5 columns with the styling of grid.css -->
+                    <a href="https://trinityrestaurantct.com/" target="_blank"> <img src="/img/Trinity Res1.jpg"
+                            alt="trinity restaurant CT"> </a>
+                    <h3> Trinity Restaurant </h3>
+                </div>
+
+                <div class="col span-1-of-5 box fav">
+                    <!-- splits the row into 1 of 5 columns with the styling of grid.css -->
+                    <a href="https://www.facebook.com/Caribbean-Restaurant-LLC-1813265882322823/" target="_blank"> <img
+                            src="/img/Carib Res1.jpg" alt="Caribbean Restaurant"> </a>
+                    <h3> Caribbean Restaurant </h3>
+                </div>
+
+                <div class="col span-1-of-5 box">
+                    <!-- splits the row into 1 of 5 columns with the styling of grid.css -->
+                    <a href="https://www.grassrootsicecream.com/" target="_blank"> <img
+                            src="/img/grassroots_icecream.jpg" alt="Grass Roots Ice Cream"></a>
+                    <h3> Gass Rooots Ice Cream </h3>
+                </div>
+
+                <div class="col span-1-of-5 box">
+                    <!-- splits the row into 1 of 5 columns with the styling of grid.css -->
+                    <a href="https://www.daniellesspencerstreetpizza.com/" target="_blank"> <img
+                            src="/img/Edis_Pizza Res1.jpg" alt="Danielles Pizzeria"> </a>
+                    <h3> Danielle's Pizzeria </h3>
+                </div>
+
+                <div class="col span-1-of-5 box">
+                    <!-- splits the row into 1 of 5 columns with the styling of grid.css -->
+                    <a href="https://www.waliaethiopianct.com/" target="_blank"> <img src="/img/Walia.jpg"
+                            alt="Walia Ethiopian Restaurant"> </a>
+                    <h3> Walia Ethiopian </h3>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ************************************ MY KITCHEN SECTION ******************************* -->
+        <section class="section-kitchen" id="kitchen">
+            <div>
+                <h2>My Kitchen!! - My Favorite Place to Eat</h2>
+                <a href="/my_kitchen.html"> <img src="/img/kitchen.jpg">
+                </a>
+            </div>
+        </section>
+
+        <!-- ******************************************* CONTACT FORM SECTION ***************************** -->
+        <section class="section-form" id="contact">
+            <!-- Contact Form -->
+            <div class="row">
+                <h2> Contact Form </h2>
+            </div>
+
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name"> Name </label>
+                            <!-- form field label, for attributes allow you to link the id name with the label name so the correct field gets highlighted in the browser when the label name is clicked-->
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                            <!-- allows you to input text -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email"> Email </label> <!-- form field label -->
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                            <!-- allows you to input text -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label> Comments </label> <!-- form field label -->
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Your message"> </textarea>
+                            <!-- creates a textbox for input -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label> &nbsp; </label>
+                            <!-- don't want any label here but need a space to ensure form alignment -->
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                            <!-- creates a send button, value attribute is used to name the button -->
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+        <script src="Resources/JavaScript/scripts.js"> </script>
+        <!-- my script should always be the last one as it is acting on or utilzing the other scripts which means they must load first -->
+    </body>
+
+</html>
