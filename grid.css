@@ -13,31 +13,8 @@
 	box-sizing: border-box;
 }
 
-html,
-body {
-	background-color: #ff5;
-	color: #555;
-	font-family: 'lato', 'Arial', sans-serif;
-	font-weight: 300px;
-	font-size: 20px;
-	text-rendering: optimizeLegibility;
-	/* for the best possible rendering of website text */
-	overflow-x: hidden;
-	/* hides text that overflow screen size - avoids horizontal scrolling */
-}
 
-.clearfix {
-	zoom: 1
-}
 
-/* clears floats */
-.clearfix:after {
-	content: '.';
-	clear: both;
-	display: block;
-	height: 0;
-	visibility: hidden;
-}
 
 /* -------------------------------------------------------- */
 /* REUSABLE COMPONENTS */
