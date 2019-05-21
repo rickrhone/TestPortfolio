@@ -1,0 +1,171 @@
+
+public class Lab2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/* ********** LAB STEP #1 ************* */		
+		int firstInt = 6; //declare an int variable (firstInt) and assign it the value of 6.
+		int secondInt = 20; //declare another int variable (secondInt) and assign it the value of 20.
+		int thirdInt; //declare another int variable (thirdInt) and don't assign it any value.
+		float floatVar = 4.4f; //declare a float variable and assign it the value of 4.4f.
+		boolean isCold = false; //declare a boolean value for `isCold` and set it to false.
+		double doubleVar = 1_245.56d; //declare a double value and assign it using the "_" character for group separation.
+		//print out the value of each variable using the `System.out.println` statement.
+		System.out.println("*************** STEP 1 ************** ");
+		System.out.println("firstInt: " + firstInt);
+		System.out.println("secondInt: " + secondInt);
+		System.out.println("thirdInt: Cannot be printed because it was not initialized");
+		System.out.println("floatVar: " + floatVar);
+		System.out.println("isCold: " + isCold);
+		System.out.println("doubleVar: " + doubleVar);
+		
+		
+		/* ********** LAB STEP #2 ************* */		
+		System.out.println("\n*************** STEP 2 *************** ");
+		System.out.println("firstInt + secondInt: " + (int)(firstInt + secondInt)); //create a new value by adding firstInt to secondInt and print the result.
+		System.out.println("firstInt + thirdInt: Cannot be printed because thirdInt was not initialized"); //create a new value by adding firstInt to thirdInt and print the result.
+		System.out.println("secondInt / firstInt: " + (int)(secondInt/firstInt)); //print the result of dividing firstInt into secondInt.  
+		System.out.println("secondInt % firstInt: " + (int)(secondInt%firstInt)); //print the remainder when dividing firstInt into secondInt. 
+		int newInt = (secondInt % firstInt) + firstInt; //create a new int and add firstInt to the remainder from the previous statement.
+		System.out.println("++((secondInt % firstInt) + firstInt): " + (int)(++newInt)); // before printing, increment the value by 1;
+		
+			
+		/* ********** LAB STEP #3 ************* */	
+		System.out.println("\n*************** STEP 3 *************** ");
+		int x = 100; //declare and int varible x and assign it the value of 100
+		boolean boolVar = (x == 100); //declare a boolean variable and assign it the value of comparing x to the value of 100.
+		System.out.println("comparing x=100 to 100: " + boolVar);
+		int y = 106; //declare a variable y and assign it a value of 106.
+		//check and print the following conditions:
+		System.out.println("x = " + x + ", y = " + y);
+		System.out.println("x > y: " + (boolean)(x > y)); //x greater than y
+		System.out.println("y > x: " + (boolean)(y > x)); //y greater than x
+		System.out.println("x >= (y - 6): " + (boolean)(x >= (y - 6))); //x greater than or equal to y-6
+		int z = 92; //Create a variable z and set it to 92.
+		//check and print the following conditions:
+		System.out.println("x = " + x + ", y = " + y + ", z = " + z);
+		System.out.println("x < y && y < z: " + (boolean)((x < y) && (y < z))); //x is less than y and y is less than z
+		System.out.println("y < z && x >= y: " + (boolean)((y < z) && (x >= y))); //y is less than z and x is greater than or equal to y
+		System.out.println("z > (y + x) || x - y < z: " + (boolean)((z > (y + x)) || (x - y < z))); //z is greater than y + x or x - y is less than z
+		//prove that x less than y is equal to NOT x greater than y.
+		System.out.println("x < y == !(x > y): " + (boolean)(x < y == !(x > y)));
+		
+		
+		/* ********** LAB STEP #4 ************* */	
+		System.out.println("\n*************** STEP 4 *************** ");
+		int n = 64; //create an integer variable n and assign it 64
+		System.out.println("n = " + n);
+		System.out.println("n >> 1 == n / 2: " + (boolean)(n >> 1 == n / 2)); //prove that shifting n 1 bit right is equivalent to dividing by 2.
+		System.out.println("n << 1 == n * 2: " + (boolean)(n << 1 == n * 2)); //prove that shifting n 1 bit left is equivalent to multipying by 2.
+		n = 40; //change the value of n to a non-power-of-2 number, such as 40, and prove that the two previous statements are still valid.
+		System.out.println("n = " + n);
+		System.out.println("n >> 1 == n / 2: " + (boolean)(n >> 1 == n / 2)); //prove that shifting n 1 bit right is equivalent to dividing by 2.
+		System.out.println("n << 1 == n * 2: " + (boolean)(n << 1 == n * 2)); //prove that shifting n 1 bit left is equivalent to multipying by 2.
+		System.out.println("n >> 2 == n / 4: " + (boolean)(n >> 2 == n / 4)); //prove that shifting n 2 bit right is equivalent to dividing by 4.
+		System.out.println("n << 2 == n * 4: " + (boolean)(n << 2 == n * 4)); //prove that shifting n 2 bit left is equivalent to multipying by 4.
+		n = 33; //change the value to an odd number and print the values to see what happens.
+		System.out.println("n = " + n);
+		System.out.println("n >> 1 == n / 2: " + (boolean)(n >> 1 == n / 2)); //prove that shifting n 1 bit right is equivalent to dividing by 2.
+		System.out.println("n << 1 == n * 2: " + (boolean)(n << 1 == n * 2)); //prove that shifting n 1 bit left is equivalent to multipying by 2.
+		System.out.println("n >> 2 == n / 4: " + (boolean)(n >> 2 == n / 4)); //prove that shifting n 2 bit right is equivalent to dividing by 4.
+		System.out.println("n << 2 == n * 4: " + (boolean)(n << 2 == n * 4)); //prove that shifting n 2 bit left is equivalent to multipying by 4.
+		
+		//Calling anotherMethod() so it can be executed STEP 5
+		anotherMethod();
+		
+		//Calling anotherMethod2() so it can be executed STEP 6
+		anotherMethod2();
+		
+		//Calling playWuthStrings() so it can be executed STEP 7
+		playWithStrings();
+	}
+	
+
+	/* ********** LAB STEP #5 ************* */		
+	public static void anotherMethod()
+	{
+		System.out.println("\n*************** STEP 5 *************** ");
+		int intVarAM = 1002; //Declare an int variable inside of the `anotherMethod` method and assign it a value.
+		
+		//create an `if` statement to test if the variable you just declared is greater than 1000.  If it is print "Big Value", if it is not print "Not a big value".
+		//Change the statement to use the variable in the output: (n + " is a Big value") or (n + " is not a big value")
+		if(intVarAM > 1000) {
+			System.out.println(intVarAM + " is a Big Value");
+			//inside of the if block, create an integer variable and assign it the value of the previously declared integer divided by 2.
+			int intVarAMHalf = intVarAM / 2;
+			System.out.println(intVarAMHalf + " is half a Big Value"); //inside of the if block, print that the newly declared variable is half a big variable.
+		} else {
+			System.out.println(intVarAM + " is Not a big value");
+			int intVarAMHalf = intVarAM / 2;
+			System.out.println(intVarAMHalf + " is definitely small"); //in the else block, print that the half value is definitely small.
+		}	
+	}
+	
+	/* ********** LAB STEP #6 ************* */		
+	public static void anotherMethod2()
+	{
+		System.out.println("\n*************** STEP 6 *************** ");
+		Integer intVarAM = 900; //In the `anotherMethod()`, change the primitive `int` to be a `Integer` variable.
+		Integer intVarCheck = Integer.parseInt("1000"); //Instead of a hard-coded 1000, create an `Integer` variable to check against, but use the string value "1000" to create the `Integer`.
+	
+		//create an `if` statement to test if the variable you just declared is greater than 1000.  If it is print "Big Value", if it is not print "Not a big value".
+		//Change the statement to use the variable in the output: (n + " is a Big value") or (n + " is not a big value")
+		if(intVarAM.compareTo(intVarCheck) > 0) {
+			System.out.println(intVarAM + " is a Big Value");
+			//inside of the if block, create an integer variable and assign it the value of the previously declared integer divided by 2.
+			int intVarAMHalf = intVarAM / 2;
+			System.out.println(intVarAMHalf + " is half a Big Value"); //inside of the if block, print that the newly declared variable is half a big variable.
+		} else {
+			System.out.println(intVarAM + " is Not a big value");
+			int intVarAMHalf = intVarAM / 2;
+			System.out.println(intVarAMHalf + " is definitely small"); //in the else block, print that the half value is definitely small.
+		}	
+	}
+	
+	/*
+	 * Lab Step #7
+
+* 
+* find and the following values:
+
+
+
+
+* print the above values using format strings, in complete sentence form.  For example: 
+    - "The total length of the String Tim Smith is 9".
+    - "The String Tim Smith does not have an 'o'".
+    - "The letter "t" is at position 7.  
+    etc.
+
+	 */
+	
+	/* ********** LAB STEP #7 ************* */		
+	public static void playWithStrings() //create another static void method - `playWithStrings()`
+	{
+		System.out.println("\n*************** STEP 7 *************** ");
+		String firstName = "Ricardo"; //create a `String` variable to represent your first name and initialize it with a string literal.
+		String lastName = new String("Rhone"); //create a `String` variable to represent your last name and initialize it by using `new()` with your last name.
+		//Using the `concat()` method, print a greeting of "Hello firstName lastName"
+		System.out.println("using concat() print Hello firstName lastName: ".concat("Hello").concat(" ").concat(firstName).concat(" ").concat(lastName));
+		//Change the println method to use the overloaded "+" operator to make the same output string
+		System.out.println("using + operator print Hello firstName lastName: " + "Hello " + firstName + " " + lastName);
+		//Create a new String variable `fullName` by combining the first and last with proper spacing.
+		String fullName = firstName + " " + lastName; 
+		System.out.println("fullName: " + fullName);
+		System.out.println("Total Length of fullName: " + fullName.length()); //what is the total length of the string?
+		System.out.println("Index of the first 'o': " + fullName.indexOf('o')); //index of the first 'o'
+		System.out.println("Letter at position 7: " + fullName.charAt(7)); //which letter is at position 7?
+		System.out.println("fullName contains the word 'son'?: " + fullName.contains("son")); //does the full name contain the word "son"?
+		System.out.println("Last 5 letters in the fullName: " + fullName.substring(fullName.length()-6)); //what are the last 5 letters in the full name?
+		System.out.println("fullName contains a apostrophe?: " + fullName.contains("'")); //does the full name contain an apostrophe or dash?
+		System.out.println("fullName contains a dash?: " + fullName.contains("-")); //does the full name contain an apostrophe or dash?
+		//Print the above values using format strings, in complete sentence form
+		System.out.println("\nPrinted in sentence form: ");
+		System.out.println(String.format("The total length of the string %s is %s", fullName, fullName.length()));
+		
+		
+		
+		
+	}
+}
